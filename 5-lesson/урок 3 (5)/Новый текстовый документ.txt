@@ -1,0 +1,10 @@
+<html>
+<head>
+<title> Задание 1</title>
+</head>
+<body>
+<p class="box">
+<span class="blue">&lt;canvas&gt;</span> &lt;/canvas&gt;
+</p>
+</boby>
+</html>
