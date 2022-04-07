@@ -35,12 +35,9 @@ body, ul, h1, h2, h3, h4, h5, h6 {
 .p-5 {
     padding: 3rem;
 } 
-
-
 .mt-0 {
     margin: 0;
    }
-   
 
 .mt-1 {
  margin: 1rem;
@@ -51,10 +48,6 @@ body, ul, h1, h2, h3, h4, h5, h6 {
    }
    
 
-
-
-
-
 .container {
     display: block;
     max-width: 1320px;
@@ -62,61 +55,6 @@ body, ul, h1, h2, h3, h4, h5, h6 {
     margin-left: auto;
     margin-right: auto;
     
-}
-
-.blok1 {
-    background-color: #facece;
-    color: #000;
-    width: 21%;
-    margin: 3px;
-}
-
-.blok2 {
-   background-color: rgb(203, 161, 161);
-   width: 100%;
-   border: 2px solid #000;
-   margin-top: 2px;
-   margin-right: 2px;
-   margin-bottom: 2px;
-   margin-left: 2px;
-   
-}
-
-.box-osnova {
-border: 1px solid;
-/* border-color: rgba(126, 115, 115, 0); */
-margin: 0.5rem;
-}
-
-.bg-lightgreen {
- background-color:rgb(184, 212, 202);
-}
-
-.text1 {
-    border: 1px solid;
-    border-color: rgba(126, 115, 115, 0);
-    margin: 0.5rem;
-    width: 5em;
-    text-align: center;
-}
-
-.button.france {
-  border: 1px solid rgb(42, 27, 27);
-  /* color: rgb(255, 255,255); */
-  background-color: rgb(27, 184, 131);
-}
-
-.button {
-  /* border-radius: 5px; */
-  cursor: pointer; 
-  padding: 10px;
-  margin: 0.4em;
-}
-
-.button.bashna {
-    border: 1px solid rgb(42, 27, 27);
-    /* color: rgb(255, 255,255); */
-    background-color: rgb(27, 184, 131); 
 }
 
 .blok4 {
@@ -141,6 +79,16 @@ border: 7px solid #222222;
 border-radius: 10px 10px;
 margin-left: 45px;
   }
+
+
+
+
+
+
+
+
+
+
 
   .navbar-nav {
       display: flex;
@@ -194,7 +142,7 @@ margin-left: 45px;
   }
 
   .content {
-      /* width: 67%; */
+      width: 67%;
   }
 
   .row {
@@ -233,4 +181,40 @@ margin-left: 45px;
 
   .post-meta span {
     font-style:italic ;
+  }
+
+
+  .btn {
+      background: none;
+      /* color:#333; */
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+
+  }
+
+  .btn-sm {
+    padding: 0.2rem 0.75rem;
+  }
+
+  .btn-light {
+    background-color: #f3f3f3;
+  }
+
+  .btn-dark {
+    background-color: #333; 
+    color: #fff;
+  }
+
+  .btn-praimary {
+    background-color: #1E90FF; 
+    color: #fff;
+  }
+
+  .post-title, .post-author {
+    color: #F8743F;
+  }
+
+  .post-title:visited, .post-author:visited{
+    color:#7fff94;
   }
