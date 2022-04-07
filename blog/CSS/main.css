@@ -125,24 +125,13 @@ margin-left: 45px;
 
   }
 
-
-
-
-
-
-
-
-
-
-
-
   .sidebar {
       width: 22%;
       display: flex;
   }
 
   .content {
-      width: 67%;
+      width: 100%;
   }
 
   .row {
@@ -158,10 +147,12 @@ margin-left: 45px;
       margin-bottom: 1.5rem;
   }
 
-  article img {
+  article img{
       max-width: 250px;
       margin-right: 15px;
   }
+
+  
 
   .post-body {
     display: flex;
@@ -217,4 +208,41 @@ margin-left: 45px;
 
   .post-title:visited, .post-author:visited{
     color:#7fff94;
+  }
+
+  .paginate {
+      display: flex;
+      list-style: none;
+  }
+
+  .paginate-item {
+      border: 1px solid #0df164;
+      margin: 2px;
+      background-color: #0b9336;
+      transition: 1s;
+  }
+
+  .paginate-item a {
+      padding: 0.75rem;
+  }
+
+  .paginate a, .paginate a:visited {
+      color:#fff;
+  }
+
+  .paginate a {
+      text-decoration: none;
+  }
+
+  .paginate-item:hover {
+      background-color: #fff;
+      /* border-color: #0b9336; */
+  }
+
+  .paginate-item:hover a {
+      color:#0b9336;
+  }
+
+  .justify-content-center {
+      justify-content: center;
   }
