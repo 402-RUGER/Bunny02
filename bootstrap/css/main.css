@@ -1,0 +1,198 @@
+body, ul, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.bg-dark {
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+.text-white {
+    color:#ffffff;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 1.5rem;
+}
+
+.p-3 {
+    padding: 2rem;
+}
+
+.p-4 {
+    padding: 2.5rem;
+}
+
+.p-5 {
+    padding: 3rem;
+} 
+.mt-0 {
+    margin: 0;
+   }
+
+.mt-1 {
+ margin: 1rem;
+}
+
+.mt-2 {
+    margin: 1.5rem;
+   }
+   
+
+
+  .container {
+    display: block;
+    max-width: 1320px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;   
+ }
+
+.col-12 {
+    height: 100%;
+    display: flex;
+    align-items: center;   
+ }
+
+.active {
+    color: rgba(0,0,0,0.9);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    list-style: none;
+ }
+
+.active2 {
+    color: rgba(0,0,0,0.55);   
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    list-style: none;
+ }
+
+.row {
+    display: flex;
+    flex-direction: row;
+ }
+
+ .content {
+  width: 100%;
+}
+ 
+
+  article {
+      border: 1px solid #333;
+      border-radius: 4px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+  }
+
+  article img{
+      max-width: 250px;
+      margin-right: 15px;
+  }
+
+  .post-title, .post-author {
+    color: #F8743F;
+  }
+
+  .post-title:visited, .post-author:visited{
+    color:#7fff94;
+  }
+
+  .post-meta {
+    display: flex;
+    font-size: 14px;
+}
+
+.post-meta > * {
+    margin: 0;
+    margin-right: 15px;  
+}
+
+.post-meta span {
+  font-style:italic ;
+}
+
+  .post-body {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+
+  .btn {
+      background: none; 
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      list-style: none;
+
+  }
+
+  .btn-sm {
+    padding: 0.2rem 0.75rem;
+  }
+
+  .btn-light {
+    background-color: #f3f3f3;
+  }
+
+  .btn-dark {
+    background-color: #333; 
+    color: #fff;
+  }
+
+
+  .paginate {
+      display: flex;
+      list-style: none;
+  }
+
+  .paginate-item {
+      border: 1px solid #0df164;
+      margin: 2px;
+      background-color: #0b9336;
+      transition: 1s;
+  }
+
+  .paginate-item a {
+      padding: 0.75rem;
+  }
+
+  .paginate a, .paginate a:visited {
+      color:#fff;
+  }
+
+  .paginate a {
+      text-decoration: none;
+  }
+
+  .paginate-item:hover {
+      background-color: #fff;
+  }
+
+  .paginate-item:hover a {
+      color:#0b9336;
+  }
+
+  .justify-content-center {
+      justify-content: center;
+  }
+
+
+
+
+
+
+
+
+
+  
