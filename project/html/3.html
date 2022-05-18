@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/3.css" rel="stylesheet" />
+</head>
+<body>
+    <script>
+        var numLikes = 0;
+        function likes() {
+	 numLikes = numLikes + 1;
+	 document.getElementById("likes").innerHTML = numLikes;
+     }
+       function reset() {
+	 numLikes = 0;
+	 document.getElementById("likes").innerHTML = numLikes;
+     }
+
+    </script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+     <section>
+        <figure>
+            <div class="photo"><img src="../images/home/1.png" alt="image"></div>
+            <figcaption>
+                <div class="like-number">
+                    <p><span id="likes">0</span>Likes</p>
+                </div>
+                <div class="like-icon"><button onclick="likes()">
+                    <img src="https://cdn3.iconfinder.com/data/icons/complete-set-icons/128/favourite512x512.png" alt="like-icon"></button>
+                </div>
+                <p> Если вам понравился сайт, поставьте пожалуйста likes, нам будет приятно! </p>
+            </figcaption>
+            <button onclick="reset()" type="reset">Reset Likes</button>
+        </figure>
+    </section>
+</body>
+</html>
