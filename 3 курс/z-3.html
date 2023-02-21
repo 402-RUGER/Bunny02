@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let str1 = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. ' +
+                  'Ab optio ut error labore nostrum reprehenderit aspernatur ' +
+                  'et ad, ipsum quaerat voluptatibus dignissimos similique, ' +
+                  'deleniti minus quam, alias corporis dolore blanditiis! ' +
+                  'Ut enim ad minima veniam, quis nostrum exercitationem ullam ' + 
+                  'corporis suscipit laboriosam, nisi ut aliquid ex ea commodi ' + 
+                  'consequatur? Quis autem vel eum iure reprehenderit qui in ea ' + 
+                  'voluptate velit esse quam nihil molestiae consequatur, vel illum ' + 
+                  'qui dolorem eum fugiat quo voluptas nulla pariatur?';
+//Задание 1//
+      let repl = str1.replaceAll('it', '*');
+      console.log('str1:', str1);
+      console.log('repl:', repl);
+
+//Задание 2//   
+       let index = str1.indexOf('Ab');
+       let sub = str1.substr(0,index);
+       console.log('sub:', sub);
+
+//Задание 3//  
+       let index2 = str1.indexOf('Quis');
+       let sub2 = str1.substr(index2);
+       console.log('sub2:', sub2);
+
+//Задание 4//   
+       let index3 = str1.indexOf('consequatur');
+       let sl = str1.slice(index3, index3 + 11);
+       console.log('sl:', sl);
+
+    </script>
+</body>
+</html>
