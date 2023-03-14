@@ -35,7 +35,7 @@
         // && - логическое И 
         // || - логическое ИЛИ
 
-        function hello(last_name, first_name, middle_name) {
+        /*function hello(last_name, first_name, middle_name) {
             let end_index = middle_name.length - 1; // последний символ
             let pre_end_index = end_index - 1; // предпоследний символ
             let last_symbols = (middle_name[pre_end_index] + middle_name[end_index]).toUpperCase(); // окончание  //toUpperCase() - преобразование строки в строчный символ  
@@ -71,8 +71,105 @@
 
         hello('Нестеров', 'Василий', 'Борисович');
         hello('Горбачёв', 'Альберт', 'Евгеньевич');
-        hello('Рябова', 'Анна', 'Александровна');
-        
+        hello('Рябова', 'Анна', 'Александровна');*/
+
+        let a = 'Hello world!'
+
+        function scope(name,last_name,second_name, car = 'BMW') {
+            //let b = 'Lorem ipsum';
+            //alert(b);
+           // alert(name);
+
+           if(second_name == undefined) {
+               second_name = 'Петрович';
+           }
+
+           console.log(
+               'name: ', name, 
+               'car: ', car, 
+               'last_name: ', last_name, 
+               'second_name: ', second_name);
+        }
+
+        function gender(middle_name) {
+            let end_index = middle_name.length - 1; // последний символ
+            let pre_end_index = end_index - 1; // предпоследний символ
+            let last_symbols = (middle_name[pre_end_index] + middle_name[end_index]).toUpperCase(); // окончание  //toUpperCase() - преобразование строки в строчный символ  
+
+           // let s = last_symbols.toUpperCase();
+           // console.log(last_symbols);
+
+            let gender = true;
+
+            if(last_symbols == 'ИЧ') {
+                gender = false;  // m
+            } else if (last_symbols == 'ЛЫ') {
+                gender = false; // m
+            } else if (last_symbols == 'НА') {
+                gender = true; // ж
+            } else if (last_symbols == 'ЗЫ') {
+                gender = true; // ж
+            }
+
+            return gender; //return-вернуть
+        }
+
+       
+        scope('Василий', 'Семенов');
+        scope('Анна', 'Нестерова', 'Nissan');
+
+        /*function selectCar(middle_name) {
+            let car = 'BMW';
+            if(!gender(middle_name)) { // ! перед булевой переменной это - отрицание( если значение true - то будет false)
+                car = 'Nissan';
+            }
+            return car;
+        }
+
+        console.log('selectCar: ', selectCar('Александрович'))*/
+
+        // ИЛИ
+        function selectCar(middle_name) {
+            let car = 'BMW';
+            let g = gender(middle_name);
+
+            if(!g) {
+                car = 'BMW';
+            }
+            return car;
+        }
+
+        console.log('selectCar: ', selectCar('Александрович'))
+
+      /* let right = confirm('Верно?');
+       consoli.log('right: ', right);*/
+
+       /*let g = gender('Александрович');
+       console.log('gender: ', g);*/
+
+   
+       let f = function(text) {
+           console.log('text: ', text);
+       };
+
+       //console.log(f);
+
+      // f('echo');
+
+      let arrowFunc = (a, b) => {  //создание стрелочных функций
+          console.log(a + b);
+      }
+
+      arrowFunc(2, 8);
+
+      let userCar = (gender) => gender ? 'BMW' : 'Nissan'; // короткая запись для 
+       // описания оператора if (если true вып-ся, то значение будет BMW, иначе будет Нисан)
+        // if(gender) {return 'BMW'} else {return 'Nissan'}
+      console.log('userCar: ', userCar(true));
+
+
+
+
     </script>
 </body>
 </html>
