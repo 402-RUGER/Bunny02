@@ -1,4 +1,80 @@
-/*function selectCar(middle_name){
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-5</title>
+</head>
+<body>
+    <script>
+    
+        var name = prompt('Укажите ФИО');
+        let s = name.split(' ');
+        let middle_name = s[2];
+        console.log('FIO: ', name);
+
+        function gender(middle_name) {
+            let end_index = middle_name.length - 1; 
+            let pre_end_index = end_index - 1; 
+            let last_symbols = (middle_name[pre_end_index] + middle_name[end_index]).toUpperCase(); 
+           
+            let gender;
+            if(last_symbols == 'ИЧ') {
+                gender = 'м';
+            } else if (last_symbols == 'ЛЫ') {
+                gender = 'м';
+            } else if (last_symbols == 'НА') {
+                gender = 'ж';
+            } else if (last_symbols == 'ЗЫ') {
+                gender = 'ж';
+            }
+            return gender;   
+            }
+
+        let g = gender(middle_name);
+        console.log('Gender: ', g); 
+
+
+
+
+
+        
+
+      
+        
+         function selectCar(middle_name){
+            if (g = 'м') {
+                car = 'BMW';
+            }
+            else 
+            if (g = 'ж'){
+                car='Nissan';
+            }
+            return car;
+            } 
+       
+         let userCar = selectCar(middle_name);
+         console.log('gcar', userCar);
+
+
+         function ask(question, yes, no) {
+        if (confirm(question)) yes()
+        else no();
+       }
+
+       ask(
+        'Марка вашей машины' + userCar, 
+        function() { alert(); },
+        function() { alert( prompt('Укажите марку вашей машины: ')); }
+       );
+
+       //let Car = ask(question, yes, no);
+      // console.log('Car: ', Car);
+
+
+
+      /*function selectCar(middle_name){
             if (g = 'м') {
                 car = 'BMW';
             }
@@ -29,3 +105,9 @@
         let userCar = selectCar(middle_name);
 
         console.log('Car: ', selectCar(' '));*/
+
+
+
+    </script>
+</body>
+</html>
