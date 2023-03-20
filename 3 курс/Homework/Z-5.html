@@ -12,7 +12,8 @@
         var name = prompt('Укажите ФИО');
         let s = name.split(' ');
         let middle_name = s[2];
-        console.log('FIO: ', name);
+        //console.log('FIO: ', name);
+       
 
         function gender(middle_name) {
             let end_index = middle_name.length - 1; 
@@ -33,29 +34,22 @@
             }
 
         let g = gender(middle_name);
-        console.log('Gender: ', g); 
+        //console.log('Gender: ', g); 
 
 
-
-
-
-        
-
-      
-        
          function selectCar(middle_name){
             if (g = 'м') {
                 car = 'BMW';
             }
             else 
-            if (g = 'ж'){
-                car='Nissan';
-            }
+            //if (g = 'ж'){
+                car ='Nissan';
+            //}
             return car;
             } 
        
          let userCar = selectCar(middle_name);
-         console.log('gcar', userCar);
+         //console.log('Car: ', userCar);
 
 
          function ask(question, yes, no) {
@@ -106,8 +100,10 @@
 
         console.log('Car: ', selectCar(' '));*/
 
-
-
+        console.log('FIO: ', name);
+        console.log('Gender: ', g); 
+        console.log('Car', userCar);
+        
     </script>
 </body>
 </html>
