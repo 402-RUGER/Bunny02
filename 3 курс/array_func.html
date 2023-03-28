@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Функции для работы с массивом</title>
+</head>
+<body>
+   <h1>Функции для работы с массивом</h1> 
+
+   <script>
+       let arr = [15, 56, 21, 88, 77, 1, 9, 132, 45, 37];
+       /*let arr2 = arr.filter((item, index, array) => {           // filter- перебор каждого эл-та массива
+        //console.log(item);
+        return item > 50;
+       });  */
+       //Сокращенная запись 
+       let arr2 = arr.filter(item => item > 50); 
+
+       let arr3 = arr.map((item, index, array) => {                     //map - перебор массива, и применение каких-то действий
+       // return item * 2;  
+       // return item > 50 ? item / 2 : item * 2; // если меньше 50*2 если больше то делим 
+      //  }); 
+           return item > 50 ? item / 2 : item * 2;
+       })
+          .filter(item => item > 40);
+
+      /* let arr4 = arr.sort((a, b) => {  // а- число текущее, b-следующее  //sort- возвращает и сортирует значение 
+            if (a > b) return 1;
+            if (a === b) return 0; //=== - сравнение не только значений, но и типов данных 
+            if (a < b) return -1;
+       });*/
+
+       let arr4 = arr.sort((a, b) => a - b);
+
+       // [15, 56, 21, 88, 77, 1, 9, 132, 45, 37]
+
+       /**
+        * a = 15, b = 56 
+        * a - b  = 15 - 56 = -41
+        * 
+        * a = 56, b = 21
+        * a - b = 56 - 21 = 35
+       **/
+
+       //let arr5 = arr.reverse();
+
+      /* let sum = 0;
+       for (let i =0; i < arr.length; i ++ {
+            sum += arr[i];
+       }*/
+
+       /*let arr6 = arr.reduce((sum, item, index, array) => {   //reduce - перебор в массиве 
+           return sum + item;
+       }); */
+       
+       arr = [1, 2, 3, 4, 5]; // считаем факториал
+       let arr6 = arr.reduce((sum, item, index, array) => {
+        return sum * item;
+       });
+
+       console.log('arr: ', arr, 'arr2: ', arr2, 'arr3: ', arr3, 'arr4: ', arr4, 
+                   /*'arr5: ', arr5,*/ 'arr6: ', arr6);
+
+   </script>
+</body>
+</html>
