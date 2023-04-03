@@ -8,163 +8,57 @@
 </head>
 <body>
     <script>
-       /*let employees = [ 
-           {
-           emp_no: '10005' ,
-           first_name: 'Kyoichi',
-           last_name: 'Maliniak',
-           birth_date: '1955',
-           gender: false,
-           salaries: [
-              {salary: '78228',
-              from_date: '1989'
-              },
-           ],
-           departments: [
-            {dept_name: 'Human Resources'
-            },
-           ]
-          },
-          {
-            emp_no: '10006' ,
-           first_name: 'Anneke',
-           last_name: 'Preusig',
-           birth_date: '1953',
-           gender: false,
-           salaries: [
-            {salary: '40000',
-            from_date: '1990'
-            },
-           ],
-           departments: [
-            {dept_name: 'Development'
-            },
-          ]
-          },
-          {
-            emp_no: '10007' ,
-           first_name: 'Tzvetan',
-           last_name: 'Zielinski',
-           birth_date: '1957',
-           gender: false,
-           salaries: [
-            {salary: '56724',
-            from_date: '1989'
-            },
-           ],
-           departments: [
-            {dept_name: 'Research'
-            },
-          ]
-          },
-          {
-            emp_no: '10008' ,
-           first_name: 'Saniya',
-           last_name: 'Kalloufi',
-           birth_date: '1958',
-           gender: false,
-           salaries: [
-            {salary: '46671',
-            from_date: '1998'
-            },
-           ],
-           departments: [
-            {dept_name: 'Development'
-            },
-          ]
-          },
-          {
-            emp_no: '10009' ,
-           first_name: 'Sumant',
-           last_name: 'Peac',
-           birth_date: '1952',
-           gender: false,
-           salaries: [
-            {salary: '60929',
-            from_date: '1985'
-            },
-           ],
-           departments: [
-            {dept_name: 'Quality Managment'
-            },
-          ]
-          },
-        ]
-       console.log(employees);*/
-
-
-
-
-       let salaries = {
+       let employees = { 
            salaries: [
         {
-            salary: '78228',
-            from_date: '1989'
+            salary: 78228,
+            from_date: 1989
         },
         {
-            salary: '40000',
-            from_date: '1990'
+            salary: 40000,
+            from_date: 1990
         },
         {
-            salary: '56724',
-            from_date: '1989'
+            salary: 56724,
+            from_date: 1989
         },
         {
-            salary: '46671',
-            from_date: '1998' 
+            salary: 46671,
+            from_date: 1998
         },
         {
-            salary: '60929',
-            from_date: '1985'
+            salary: 60929,
+            from_date: 1985
         },
        ],
 
        get max() {
-         //Math.max(salaries);
-
-
-
-        /*let max_salary = 0;
-        let maxNAme = null;
-
-        for(const [name, salary] of Object.entries(salaries)) {
-          if (max < salary) {
-            max = salary;
-            maxName = name;
-          }
-        }
-
-        return maxName;*/
-
-        
-        //let max = this.max().sort().reverse()[0];
-        //console.log(max);
-        
-        
-      //max_selary =  Math.max(...salaries);
-        return 'max';
-
-        
-     
-
-     //let max = Math.max(salary);
-    // console.log(`Max of ${salary} is ${max}`);
+        let arr_sal = employees.salaries;
+        let find_max = Math.max(...arr_sal.map(o => o.salary));
+        return `${find_max}`;
        },
 
        get min() {
-        return 'min';
+        let arr_sal = employees.salaries;
+        let find_min = Math.min(...arr_sal.map(o => o.salary));
+        return `${find_min}`;
        },
 
        get avg() {
-        return 'avg';
+        let sum = 0;
+        let arr_sal = employees.salaries;
+        let len_s = employees.salaries.length;
+        for (let i = 0; i < len_s; i++) {
+          sum = sum + arr_sal[i].salary;
+        }
+        let find_avg = sum / len_s;
+        return `${find_avg}`;
        },
 
     };
-    //console.log('max: ', Math.max.salaries);
-   
-       //console.log('max: ', salaries.max);
-       //console.log('min: ', salaries.min);
-       //console.log('avg: ', salaries.avg);
+       console.log('max: ', employees.max);
+       console.log('min: ', employees.min);
+       console.log('avg: ', employees.avg);
 
     </script>
 </body>
