@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-7</title>
+</head>
+<body>
+    <script>
+       let employees = {
+           salaries: [
+        {
+            salary: '78228',
+            from_date: 1989
+        },
+        {
+            salary: '40000',
+            from_date: 1990
+        },
+        {
+            salary: '56724',
+            from_date: 1989
+        },
+        {
+            salary: '46671',
+            from_date: 1998
+        },
+        {
+            salary: '60921',
+            from_date: 1985
+        },
+       ]}
+
+       let s = employees.salaries;
+       let s2 = s.map((item, index, array) => {
+           return item.salary
+       })
+       
+       let s3 = s2.map((item, index, array) => {
+           return ('' + item).split("")
+       })
+
+
+       let num = [];
+
+           for (let i = 0; i< s3.length; i++) {
+           num[i] = s3[i].reduce((sum, item, index, array) => {
+        return (+sum) + (+item)
+    })
+}
+
+
+
+       console.log(s2);
+          console.log(a);
+          console.log(num);
+
+       let cislo = '18';
+        //alert("Позравляем, вы победитель!");
+
+         console.log(typeof(+cislo));
+    
+  
+
+         
+    
+
+    </script>
+</body>
+</html>
